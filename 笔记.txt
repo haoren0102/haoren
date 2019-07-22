@@ -1,0 +1,67 @@
+vim linux
+esc 退出
+：wq 保存
+
+
+node.js  javascript运行在服务器端的开发平台   2009-2年开始  5月正式研发   2019年火爆
+    特点：
+    单线程   非阻塞I/O 事件驱动
+    
+    node -v 查看版本号
+    node 1.js 运行1.js
+    模块 ：
+            http：
+            http.createServer（（req，res）=》｛
+                res.end（）输出
+            ｝）.listen（3000）链接节点
+            建立服务器  
+
+            fs： 文件系统
+
+
+            
+
+
+
+
+
+
+
+
+   express： 基于node封装的上层服务框架
+    var express = require('express');
+    var app = express();
+    app.use（）
+
+            cookie:
+            缺点 保存在本地，只要不过期就一直存在
+                容易受攻击
+                大小不超过4k
+                cookie携带的信息容易被篡改
+            cookie-parser：
+        
+
+git： 基于Linux封装的
+    分布式管理系统    github  仓库   码云（svg or git ）  gitlab 云平台
+    本地区  暂存区  服务区（远端）
+    git init 项目初始化  （只执行一次即可）
+    身份 效验（第一次执行时输入）
+    git config --global user.name “用户名”
+    git config --global user.email “邮箱”   
+    git add . 添加所有文件  （未被添加的）
+    git commit -m “注释”  提交文件到暂存区
+    git status 查看当前状态
+    git remote add origin url  链接远端数据库（仅针对第一次）
+    git push -u origin master  第一次提交到数据库
+    git push 第二次
+
+    分支：
+    git branch   列出所有分支（查看）
+    git branch -r 列出远端所有的分支 （终端库）
+    git branch -a 列出本地和远端所有分支
+    git branch div  创建div名字的分支  并停留在当前分支（不切换）
+    git checkout div   切换分支
+    git checkout -b tit  创建tit名字的分支  并切换到创建的分支
+    git push --set-upstream origin 分支名称  提交分支到远端
+    问题  ：会把mster分支上的东西同时提交上去；
+    
